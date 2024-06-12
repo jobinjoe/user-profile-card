@@ -1,9 +1,33 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import { Image, StyleSheet, Platform, SafeAreaView } from 'react-native';
 
+// import { ThemedView } from '@/components/ThemedView';
+
+// const user = {
+//   name: 'John Doe',
+//   avatar: 'https://via.placeholder.com/150',
+//   biography: 'John is a software engineer with a passion for building scalable applications.'
+// };
+
+// export default function HomeScreen() {
+//   return (
+//     <SafeAreaView style={styles.container}>
+//       <ThemedView style={styles.titleContainer}>
+//         {/* <ThemedText type="title">Welcome!</ThemedText> */}
+//         {/* <HelloWave /> */}
+//       </ThemedView>
+//       {/* <UserProfile
+//         user={user}
+//         render={(user: any) => <UserCard user={user} />}
+//       /> */}
+//     </SafeAreaView>
+//   );
+// }
+
+import { ThemedView } from '@/components/ThemedView';
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
+
 
 export default function HomeScreen() {
   return (
@@ -51,6 +75,11 @@ export default function HomeScreen() {
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   titleContainer: {
     flexDirection: 'row',
     alignItems: 'center',
